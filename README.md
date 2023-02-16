@@ -14,8 +14,13 @@ I am student at Slovak Technical University with experience as PHP developer, in
 
 ### Connect with me
 <a href="https://www.linkedin.com/in/andrejvysny/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="AndrejVysny | LinkedIn" width="31px"/></a>
-
 <br>
+<br>
+## 🌱 I’m currently learning
+![Ansible](https://img.shields.io/badge/ansible-%23111111.svg?style=for-the-badge&logo=ansible&logoColor=white)
+![Terraform](https://img.shields.io/badge/terraform-%23844fba.svg?style=for-the-badge&logo=terraform&logoColor=white) 
+![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) 
+
 
 <br>
 
