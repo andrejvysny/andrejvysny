@@ -6,8 +6,6 @@ Hi there, I'm <a href="https://www.andrejvysny.sk/" target="_blank" rel="norefer
 I'm a Full-Stack Web Developer 💻 and Photographer 📸!
 </h2> 
 
----
-
 <p align="center">
 I am student at Slovak Technical University with experience as PHP developer, interested in many fields. I love challanges! If I don't know something, I will learn, fast!
 </p>
