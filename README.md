@@ -14,6 +14,17 @@ I am student at Slovak Technical University with experience as PHP developer, in
 <a href="https://www.linkedin.com/in/andrejvysny/"><img align="left" src="https://raw.githubusercontent.com/yushi1007/yushi1007/main/images/linkedin.svg" alt="AndrejVysny | LinkedIn" width="31px"/></a>
 <br>
 <br>
+
+## ❤ I love! 
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Symfony](https://img.shields.io/badge/symfony-grey?style=for-the-badge&logo=symfony)
+![React.js](https://img.shields.io/badge/react-white?style=for-the-badge&logo=react)
+![GitHub Actions](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+#### Other stuff I use
+
+C, C++, Python, Bash scripts, RabbitMQ, Redis, PostgreSQL, Microsoft Azure, Ionic, 
+
 ## 🌱 I’m currently learning
 ![Ansible](https://img.shields.io/badge/ansible-%23111111.svg?style=for-the-badge&logo=ansible&logoColor=white)
 ![Terraform](https://img.shields.io/badge/terraform-%23844fba.svg?style=for-the-badge&logo=terraform&logoColor=white) 
@@ -43,9 +54,7 @@ I am student at Slovak Technical University with experience as PHP developer, in
 
 </br>
 
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 <!--
 **andrejvysny/andrejvysny** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
