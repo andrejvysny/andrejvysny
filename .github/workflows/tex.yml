@@ -41,5 +41,5 @@ jobs:
               server: andrejvysny.sk
               username: get.andrejvysny.sk
               password: ${{ secrets.FTP_PASS }}
-              server-dir: cv
+              server-dir: ./cv/
               local-dir: ./cv.pdf/
