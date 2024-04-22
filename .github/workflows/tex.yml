@@ -34,10 +34,12 @@ jobs:
             uses: actions/download-artifact@v4
             with:
               name: cv-pdf
-              path: cv.pdf
+              path: ./cv.pdf
           - name: 📂 Upload files
             uses: SamKirkland/FTP-Deploy-Action@4.2.0
             with:
               server: andrejvysny.sk
               username: get.andrejvysny.sk
               password: ${{ secrets.FTP_PASS }}
+              server-dir: cv
+              local-dir: ./cv.pdf/
