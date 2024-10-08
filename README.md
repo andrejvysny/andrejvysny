@@ -3,11 +3,11 @@ Hi there, I'm <a href="https://www.andrejvysny.sk/" target="_blank" rel="norefer
 </h1>
 
 <h2 align="center">
-I'm a Full-Stack Web Developer 💻 and Photographer 📸!
+I'm a Software Developer 💻 and Photographer 📸!
 </h2> 
 
 <p align="center">
-I am student at Slovak Technical University with experience as PHP developer, interested in many fields. I love challanges! If I don't know something, I will learn, fast!
+I am student at Slovak Technical University with experience as PHP developer, interested in many fields such as DevOps, Backend, Embeded systems... I love challanges! If I don't know something, I will learn, fast!
 </p>
 
 ### Connect with me
@@ -19,19 +19,21 @@ I am student at Slovak Technical University with experience as PHP developer, in
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![Symfony](https://img.shields.io/badge/symfony-grey?style=for-the-badge&logo=symfony)
 ![React.js](https://img.shields.io/badge/react-white?style=for-the-badge&logo=react)
+![Gitlab Pipelines](https://img.shields.io/badge/gitlab%pipelines-%23121011.svg?style=for-the-badge&logo=gitlab&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 #### Other stuff I use
 
 C, C++, Python, Bash scripts, RabbitMQ, Redis, PostgreSQL, Microsoft Azure, Ionic, 
+ROS2, Raspberry Pi, Arduino, Atmel Chips,
 
 ## 🌱 I’m currently learning
 ![Ansible](https://img.shields.io/badge/ansible-%23111111.svg?style=for-the-badge&logo=ansible&logoColor=white)
-![Terraform](https://img.shields.io/badge/terraform-%23844fba.svg?style=for-the-badge&logo=terraform&logoColor=white) 
 ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) 
 
-
 <br>
+
+
 
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=andrejvysny&count_private=true&show_icons=true&theme=dark)](https://github.com/andrejvysny)
@@ -39,6 +41,7 @@ C, C++, Python, Bash scripts, RabbitMQ, Redis, PostgreSQL, Microsoft Azure, Ioni
 
 <!--
 ## 💼 Technical Skills
+## 🔭 I’m currently working on ...
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -61,7 +64,7 @@ C, C++, Python, Bash scripts, RabbitMQ, Redis, PostgreSQL, Microsoft Azure, Ioni
 
 Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
+
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
 - 🤔 I’m looking for help with ...
