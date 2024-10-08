@@ -19,7 +19,7 @@ I am student at Slovak Technical University with experience as PHP developer, in
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![Symfony](https://img.shields.io/badge/symfony-grey?style=for-the-badge&logo=symfony)
 ![React.js](https://img.shields.io/badge/react-white?style=for-the-badge&logo=react)
-![Gitlab Pipelines](https://img.shields.io/badge/gitlab-%23fc6d26.svg?style=for-the-badge&logo=gitlab&logoColor=white)
+![Gitlab Pipelines](https://img.shields.io/badge/gitlab%20pipelines-%23fc6d26.svg?style=for-the-badge&logo=gitlab&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 #### Other stuff I use
