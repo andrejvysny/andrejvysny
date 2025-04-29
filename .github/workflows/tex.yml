@@ -22,8 +22,8 @@ jobs:
           - name: Upload PDF file
             uses: actions/upload-artifact@v4
             with:
-              name: cv-en-pdf
-              path: cv.pdf
+              name: cv-pdf
+              path: cv.en.pdf
 
     build_sk:
                 runs-on: ubuntu-latest
@@ -38,8 +38,8 @@ jobs:
                   - name: Upload PDF file
                     uses: actions/upload-artifact@v4
                     with:
-                      name: cv-sk-pdf
-                      path: cv.pdf
+                      name: cv-pdf
+                      path: cv.sk.pdf
     
     deploy:
         name: Upload PDF
@@ -51,13 +51,13 @@ jobs:
           - name: Download artifact
             uses: actions/download-artifact@v4
             with:
-              name: cv-en-pdf
-              path: ./cv.pdf
+              name: cv-pdf
+              path: ./cv/
           - name: Download artifact
             uses: actions/download-artifact@v4
             with:
-              name: cv-sk-pdf
-              path: ./cv.pdf
+              name: cv-pdf
+              path: ./cv/
           - name: 📂 Upload files
             uses: SamKirkland/FTP-Deploy-Action@4.2.0
             with:
@@ -65,4 +65,4 @@ jobs:
               username: get.andrejvysny.sk
               password: ${{ secrets.FTP_PASS }}
               server-dir: ./cv/
-              local-dir: ./cv.pdf/
+              local-dir: ./cv/
