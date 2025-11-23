@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Andrej Vysny – software developer and photographer. A quick landing page for projects and ways to reach out.">
+  <title>Andrej Vysny | Projects & Experiments</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="backdrop"></div>
+  <div class="page">
+    <header class="hero">
+      <p class="eyebrow">software · systems · devops</p>
+      <h1>Andrej Vysny</h1>
+      <p class="lede">
+        I build reliable backends, pipelines, and tools. Here is a compact hub for the projects and experiments I am
+        currently shaping.
+      </p>
+      <div class="cta-row">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn ghost" href="mailto:andrej@andrejvysny.sk">Email me</a>
+      </div>
+      <div class="meta">
+        <span>Based in Slovakia</span>
+        <span class="dot">•</span>
+        <span>Open to collaborations</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel" id="projects">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2>Projects in motion</h2>
+            <p class="hint">Small, focused builds that keep me exploring new stacks and patterns.</p>
+          </div>
+          <div class="status-pill">Always iterating</div>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-top">
+              <span class="badge">Pipeline</span>
+              <span class="muted">PHP · GitHub Actions · Azure</span>
+            </div>
+            <h3>Build & deploy backbone</h3>
+            <p>
+              CI/CD templates that lint, test, and promote services with zero-downtime rollouts. Includes
+              reusable GitHub Actions and IaC guardrails.
+            </p>
+            <div class="card-meta">
+              <a href="https://github.com/andrejvysny" target="_blank" rel="noreferrer">Source</a>
+              <span class="dot">•</span>
+              <span>In production</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <span class="badge accent">Edge</span>
+              <span class="muted">React · Redis · WebSocket</span>
+            </div>
+            <h3>Telemetry wallboard</h3>
+            <p>
+              Real-time dashboard for fleet metrics with server-sent events and graceful offline fallbacks. Tuned for low
+              latency and simple on-call visibility.
+            </p>
+            <div class="card-meta">
+              <a href="https://github.com/andrejvysny" target="_blank" rel="noreferrer">Source</a>
+              <span class="dot">•</span>
+              <span>Alpha build</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <span class="badge">Robotics</span>
+              <span class="muted">ROS2 · C++ · Ubuntu</span>
+            </div>
+            <h3>Autonomy sandbox</h3>
+            <p>
+              Lightweight ROS2 nodes for sensor fusion experiments and path planning. Emphasis on traceable logs and
+              reproducible runs.
+            </p>
+            <div class="card-meta">
+              <a href="https://github.com/andrejvysny" target="_blank" rel="noreferrer">Source</a>
+              <span class="dot">•</span>
+              <span>Ongoing</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel split">
+        <div>
+          <p class="eyebrow">Focus areas</p>
+          <h2>What I enjoy building</h2>
+          <ul class="pill-list">
+            <li>Resilient APIs & services</li>
+            <li>Developer tooling</li>
+            <li>Observability-first pipelines</li>
+            <li>Embedded & robotics experiments</li>
+            <li>Fast feedback CI</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <p class="hint">Toolkit highlights</p>
+          <div class="stack">
+            <span>Symfony</span>
+            <span>React</span>
+            <span>Docker</span>
+            <span>GitHub Actions</span>
+            <span>Terraform</span>
+            <span>Azure</span>
+            <span>Redis</span>
+            <span>PostgreSQL</span>
+            <span>ROS2</span>
+          </div>
+          <p class="note">If something is unfamiliar, I learn it quickly and document as I go.</p>
+        </div>
+      </section>
+
+      <section class="panel connect" id="contact">
+        <div>
+          <p class="eyebrow">Reach out</p>
+          <h2>Let’s build something</h2>
+          <p class="hint">Collaborations, contract work, or just to share a tricky bug story.</p>
+        </div>
+        <div class="links">
+          <a href="mailto:andrej@andrejvysny.sk">andrej@andrejvysny.sk</a>
+          <a href="https://www.linkedin.com/in/andrejvysny/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/andrejvysny" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.andrejvysny.sk/" target="_blank" rel="noreferrer">andrejvysny.sk</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Andrej Vysny</span>
+      <span class="dot">•</span>
+      <span>Built for andrejvysny.github.io</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
