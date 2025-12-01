@@ -1,68 +1,65 @@
-name: Nginx Hello World
+name: Build & Deploy CV
 
 on:
   push:
     paths:
-      - 'cv.tex'
+      - 'cv.en.tex'
+      - 'cv.sk.tex'
       - '.github/workflows/tex.yml'
 
-      
 jobs:
- 
-    build:
-        runs-on: ubuntu-latest
-        steps:
-          - name: Set up Git repository
-            uses: actions/checkout@v4
-          - name: Compile LaTeX document
-            uses: xu-cheng/latex-action@v3
-            with:
-              root_file: cv.en.tex
-    
-          - name: Upload PDF file
-            uses: actions/upload-artifact@v4
-            with:
-              name: cv-pdf
-              path: cv.en.pdf
+  build-en:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Compile English CV
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv.en.tex
+      - name: Upload English PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-en-pdf
+          path: cv.en.pdf
 
-    build_sk:
-                runs-on: ubuntu-latest
-                steps:
-                  - name: Set up Git repository
-                    uses: actions/checkout@v4
-                  - name: Compile LaTeX document
-                    uses: xu-cheng/latex-action@v3
-                    with:
-                      root_file: cv.sk.tex
-            
-                  - name: Upload PDF file
-                    uses: actions/upload-artifact@v4
-                    with:
-                      name: cv-pdf
-                      path: cv.sk.pdf
-    
-    deploy:
-        name: Upload PDF
-        needs: 
-          - build
-          - build_sk
-        runs-on: ubuntu-latest
-        steps:
-          - name: Download artifact
-            uses: actions/download-artifact@v4
-            with:
-              name: cv-pdf
-              path: ./cv/
-          - name: Download artifact
-            uses: actions/download-artifact@v4
-            with:
-              name: cv-pdf
-              path: ./cv/
-          - name: 📂 Upload files
-            uses: SamKirkland/FTP-Deploy-Action@4.2.0
-            with:
-              server: andrejvysny.sk
-              username: get.andrejvysny.sk
-              password: ${{ secrets.FTP_PASS }}
-              server-dir: ./cv/
-              local-dir: ./cv/
+  build-sk:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Compile Slovak CV
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv.sk.tex
+      - name: Upload Slovak PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-sk-pdf
+          path: cv.sk.pdf
+
+  deploy:
+    name: Deploy to FTP
+    needs:
+      - build-en
+      - build-sk
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download English PDF
+        uses: actions/download-artifact@v4
+        with:
+          name: cv-en-pdf
+          path: ./cv/
+      - name: Download Slovak PDF
+        uses: actions/download-artifact@v4
+        with:
+          name: cv-sk-pdf
+          path: ./cv/
+      - name: Deploy to FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+        with:
+          server: andrejvysny.sk
+          username: get.andrejvysny.sk
+          password: ${{ secrets.FTP_PASS }}
+          server-dir: ./cv/
+          local-dir: ./cv/
